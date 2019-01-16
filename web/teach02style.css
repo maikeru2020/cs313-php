@@ -1,0 +1,7 @@
+div {
+    font: 3em sans-serif;
+}
+
+div:hover {
+    font-weight: bold;
+}
