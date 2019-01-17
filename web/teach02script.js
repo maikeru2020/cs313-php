@@ -12,6 +12,6 @@ $(document).ready(function() {
     })
 
     $("#fade").click(function() {
-        $("block3").fadeToggle();
+        $("#block3").fadeToggle();
     })
 })
