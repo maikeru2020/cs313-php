@@ -8,6 +8,6 @@ function changeColor(color) {
 $(document).ready(function() {
     $("#backgroundButton").click(function() {
         newColor = $("#color").val();
-        $("#block1").attr("background-color", newColor);
+        $("#block1").css("background-color", newColor);
     })
 })
