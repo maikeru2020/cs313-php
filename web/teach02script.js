@@ -10,4 +10,8 @@ $(document).ready(function() {
         newColor = $("#color").val();
         $("#block1").css("background-color", newColor);
     })
+
+    $("#fade").click(function() {
+        $("#fade").fadeToggle();
+    })
 })
