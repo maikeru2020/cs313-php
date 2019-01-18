@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
 <?php
   date_default_timezone_set('America/Los_Angeles');
-  $date = date('m/d/Y h:i:s a');
+  $date = date('m/d/Y h:i:s a', time());
 ?>
+
 <html>
 <head>
   <meta charset="utf-8" />
@@ -14,11 +16,17 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
     <ul class="navbar-nav">
-      <li class="nav-item">Home</li>
-      <li class="nav-item">Assignments</li>
-      <li class="nav-item"><?php $date ?></li>
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="assignments.html" class="nav-link">Assignments</a>
+      </li>
+      <li class="nav-item" c>
+        Date
+      </li>
     </ul>
   </nav>
   <h1>CS 313 - Michael Schmidt</h1>
