@@ -2,7 +2,7 @@
 
 <?php
   date_default_timezone_set('America/Los_Angeles');
-  $date = date('m/d/Y h:i:s a', time());
+  $date = date('m/d/Y');
 ?>
 
 <html>
@@ -24,9 +24,7 @@
       <li class="nav-item">
         <a href="assignments.html" class="nav-link">Assignments</a>
       </li>
-      <li class="nav-item" c>
-        Date
-      </li>
+      <li class="nav-item" class="nav-link"><?php echo $date ?></li>
     </ul>
   </nav>
   <h1>CS 313 - Michael Schmidt</h1>
