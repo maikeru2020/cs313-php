@@ -2,7 +2,6 @@
 
 <?php
   date_default_timezone_set('America/Los_Angeles');
-  $date = date('m/d/Y');
 ?>
 
 <html>
@@ -25,15 +24,15 @@
         <a href="assignments.html">Assignments</a>
       </div>
       <div class="col-sm">
-        <?php echo $date ?>
+        <button onclick="displayTime(<?php echo date("g:i") ?>);">Display Current Time</button>
       </div>
     </div>
   </div>
   <h1>CS 313 - Michael Schmidt</h1>
   <div class="container-fluid" id="photoContainer">
-    <img src="sealing.jpg" alt="Sealing at Columbia River Washington Temple" class="rounded img-fluid">
+    <img src="sealing.jpg" title="Sealing at Columbia River Washington Temple" class="rounded img-fluid">
   </div>
-  <blockquote class="blockquote">Families can be Together Forever</blockquote>
+  <blockquote>Families can be Together Forever</blockquote>
 
 
   
