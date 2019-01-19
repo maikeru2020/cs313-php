@@ -6,7 +6,7 @@ h1 {
 #familyPhoto {
     display: none;
     margin: auto;
-    border: 20px groove brown;
+    border: 1em groove brown;
 }
 
 #leeQuote {
@@ -17,5 +17,7 @@ h1 {
 
 .footer {
     background-color: lightgreen;
+    color: black;
     font-size: 2em;
+    margin: 8px 5px;
 }
