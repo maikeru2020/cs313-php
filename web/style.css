@@ -1,19 +1,21 @@
 h1 {
     text-align: center;
+    background-color: lightgreen;
 }
 
-img {
+#familyPhoto {
+    display: none;
+    margin: auto;
+    border: 20px groove brown;
+}
+
+#leeQuote {
     display: block;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    border: 1em solid seagreen;
 }
 
-#photoContainer {
-    background-color: lightblue;
-}
-
-blockquote {
-    text-align: center;
-    font-size: 3em;
+.footer {
+    background-color: lightgreen;
+    font-size: 2em;
 }

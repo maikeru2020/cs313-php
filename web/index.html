@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <?php
-  date_default_timezone_set('America/Los_Angeles');
-  $time = date("g:i");
+  date_default_timezone_set('America/Boise');
+  $time = date("m/d/Y g:i");
 ?>
 
 <html>
@@ -25,15 +25,14 @@
         <a href="assignments.html">Assignments</a>
       </div>
       <div class="col-sm">
-        <span id="time"><?php echo $time . ' ' ?></span><button onclick="updateTime();">Update</button>
+        <button onclick="showHidePhoto();">Show/Hide Family Photo</button>
       </div>
     </div>
   </div>
   <h1>CS 313 - Michael Schmidt</h1>
-  <div class="container-fluid" id="photoContainer">
-    <img src="sealing.jpg" title="Sealing at Columbia River Washington Temple" class="rounded img-fluid">
-  </div>
-  <blockquote>Families can be Together Forever</blockquote>
+  <img id="familyPhoto" src="sealing.jpg" title="Sealing at Columbia River Washington Temple" class="img-fluid">
+  <img id="leeQuote" src="leeQuote.jpg" alt="Harold B. Lee Quote" class="img-fluid">
+  <div class="footer">This page was loaded on <?php echo $date ?> MST</div>
 
 
   

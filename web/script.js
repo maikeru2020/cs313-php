@@ -1,4 +1,8 @@
-function updateTime(time) {
-    <?php $time = date("g:i"); ?>
-    document.getElementById("time").innerHTML = <?php echo "\"$time\"" ?>;
+function showHidePhoto() {
+    familyPhoto = document.getElementById("familyPhoto");
+    if (familyPhoto.style.display == "block") {
+        familyPhoto.style.display = "none";
+    } else {
+        familyPhoto.style.display = "block";
+    }
 }
