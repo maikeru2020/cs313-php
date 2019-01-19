@@ -5,4 +5,10 @@ h1 {
 img {
     display: block;
     margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#photoContainer {
+    background-color: lightblue;
 }
