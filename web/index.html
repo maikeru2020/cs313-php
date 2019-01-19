@@ -24,7 +24,7 @@
         <a href="assignments.html">Assignments</a>
       </div>
       <div class="col-sm">
-        <button onclick="displayTime("<?php echo date("g:i") ?>");">Display Current Time</button>
+        <button onclick="displayTime(<?php echo '\"' . date("g:i") . '\"' ?>);">Display Current Time</button>
       </div>
     </div>
   </div>
