@@ -19,7 +19,7 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-sm">
-        <a href="index.html">Home</a>
+        <a href="index.php">Home</a>
       </div>
       <div class="col-sm">
         <a href="assignments.html">Assignments</a>
