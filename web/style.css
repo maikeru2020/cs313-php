@@ -21,3 +21,8 @@ h1 {
     font-size: 2em;
     margin: 8px 5px;
 }
+
+#assignments {
+    padding-left: 300px;
+    font-size: 20px;
+}

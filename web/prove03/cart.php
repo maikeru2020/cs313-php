@@ -45,7 +45,12 @@
         </tr>
         </table>
         <p>Total Price: $<?php echo $total?></p>
-        <a href="checkout.php"><button>Continue to Checkout</button></a>
+        <?php
+            if (!empty($_SESSION)) {
+                echo "<a href='checkout.php'><button>Continue to Checkout</button></a>";
+            }
+        ?>
+
     </div>
 </body>
 </html>

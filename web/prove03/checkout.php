@@ -44,7 +44,7 @@
                     <td><input type="text" name="zip"></td>
                 </tr>
             </table><br>
-                <input type="submit" value="Place Order">
+            <input type="submit" value="Place Order">
         </form>
     </div>
         
