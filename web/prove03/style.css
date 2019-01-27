@@ -1,0 +1,32 @@
+body {
+    background-color: lightgreen
+
+}
+
+.navbar {
+    margin-left: 150px;
+    font-size: 20px;
+}
+
+#cart {
+    float: right;
+    padding-right: 100px;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.center {
+    margin-left: 150px;
+}
+
+.qty {
+    text-align: center;
+}
+
+img {
+    float: right;
+    padding-right: 100px;
+    padding-top: 30px;
+}
