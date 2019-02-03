@@ -1,35 +1,36 @@
 CREATE TABLE teachers (
-    teacher_id INT PRIMARY KEY,
+    teacher_id SERIAL PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE subjects (
-    subject_id INT PRIMARY KEY,
+    subject_id SERIAL PRIMARY KEY,
     subject_name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE terms (
-    term_id INT PRIMARY KEY,
+    term_id SERIAL PRIMARY KEY,
     term_name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE lesson_plans (
-    lesson_plan_id INT PRIMARY KEY,
-    teacher_id INT REFERENCES teachers,
-    subject_id INT REFERENCES subjects,
-    term_id INT REFERENCES terms,
-    week_number INT NOT NULL,
+    lesson_plan_id SERIAL PRIMARY KEY,
+    teacher_id INT NOT NULL REFERENCES teachers,  -- foreign keys
+    subject_id INT NOT NULL REFERENCES subjects,
+    term_id INT NOT NULL REFERENCES terms,
+    
+    week_number INT NOT NULL,   -- lesson plan data fields
+    week_ending DATE NOT NULL, 
+    reference VARCHAR(255) NOT NULL,
+    day_duration VARCHAR(255) NOT NULL,
+    topic VARCHAR(255) NOT NULL,
+    objectives TEXT NOT NULL,
+    activities TEXT NOT NULL,
+    materials TEXT NOT NULL,
+    core_points TEXT NOT NULL,
+    evaluation TEXT NOT NULL,
 
-    week_ending DATE, 
-    reference VARCHAR(255),
-    day_duration VARCHAR(255),
-    topic VARCHAR(255),
-    objectives TEXT,
-    activities TEXT,
-    materials VARCHAR(255),
-    core_points TEXT,
-    evaluation TEXT,
-
-    is_approved BOOLEAN
+    is_approved BOOLEAN NOT NULL -- headmaster's approval
 );
