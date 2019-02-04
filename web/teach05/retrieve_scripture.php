@@ -29,10 +29,12 @@ catch (PDOException $ex)
     <title>Scripture</title>
 </head>
 <body>
+<h1>Scripture Resources</h1>
 <?php
-    foreach ($db->query('SELECT book FROM scriptures') as $row)
+    foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures') as $row)
     {
-        echo $row['book'];
+        echo "<b>$row['book'] $row['chapter']:$row['verse']</b> - $row['content']<br>";
+        echo "$row['book']";
     }
 ?>
 </body>
