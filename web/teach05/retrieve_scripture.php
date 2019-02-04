@@ -30,9 +30,9 @@ catch (PDOException $ex)
 </head>
 <body>
 <?php
-    foreach ($db->query('SELECT book, chapter, verse, content FROM note_user') as $row)
+    foreach ($db->query('SELECT book FROM scriptures') as $row)
     {
-    echo $row['book'];
+        echo $row['book'];
     }
 ?>
 </body>
