@@ -1,4 +1,6 @@
 <?php
+
+/*
     $server = 'localhost';
     $username = 'root';
     $password = '';
@@ -10,9 +12,9 @@
     } catch(PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }
+*/
 
 
-/*
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -34,6 +36,6 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-*/
+
 
 ?>
