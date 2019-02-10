@@ -12,7 +12,9 @@ CREATE TABLE subjects (
 
 CREATE TABLE terms (
     term_id SERIAL PRIMARY KEY,
-    term_name VARCHAR(255) NOT NULL
+    season VARCHAR(255) NOT NULL,
+    academic_year VARCHAR(255) NOT NULL,
+    UNIQUE(academic_year, season)
 );
 
 CREATE TABLE lesson_plans (

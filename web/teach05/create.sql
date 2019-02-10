@@ -3,7 +3,7 @@ CREATE TABLE scriptures (
     book VARCHAR(255) NOT NULL,
     chapter INT NOT NULL,
     verse INT NOT NULL,
-    content VARCHAR(255) NOT NULL
+    content TEXT NOT NULL
 );
 
 INSERT INTO scriptures (book, chapter, verse, content)
