@@ -1,6 +1,6 @@
-INSERT INTO teachers (username, first_name, last_name) VALUES ('fkouakou', 'Freddy', 'Kouakou');
-INSERT INTO teachers (username, first_name, last_name) VALUES ('pSnyder', 'Paulie', 'Snyder');
-INSERT INTO teachers (username, first_name, last_name) VALUES ('maikeru2020', 'Michael', 'Schmidt');
+INSERT INTO teachers (username, user_password, first_name, last_name) VALUES ('fkouakou', 'fPassword', 'Freddy', 'Kouakou');
+INSERT INTO teachers (username, user_password, first_name, last_name) VALUES ('pSnyder', 'pPassword', 'Paulie', 'Snyder');
+INSERT INTO teachers (username, user_password, first_name, last_name) VALUES ('maikeru2020', 'mPassword', 'Michael', 'Schmidt');
 
 INSERT INTO subjects (subject_name) VALUES ('English Language');
 INSERT INTO subjects (subject_name) VALUES ('Integrated Science');

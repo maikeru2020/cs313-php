@@ -7,7 +7,7 @@
         $content = $_POST['content'];
         $topics = $_POST['topics'];
         $db->query("INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', '$chapter', '$verse', '$content')");
-        $scriptureId = $db->lastInsertId('scriptures_id_seq');
+        $scriptureId = $db->lastInsertId('scriptures_scripture_id_seq');
         foreach ($topics as $topicId) {
             $db->query("INSERT INTO scriptures_topics (scripture_id, topic_id) VALUES ($scriptureId, $topicId)");
         }    
@@ -15,7 +15,7 @@
         if (isset($_POST['addTopic'])) {
             $newTopic = $_POST['newTopic'];
             $db->query("INSERT INTO topics (topic_name) VALUES ('$newTopic')");
-            $topicId = $db->lastInsertId('topics_id_seq');
+            $topicId = $db->lastInsertId('topics_topic_id_seq');
             $db->query("INSERT INTO scriptures_topics (scripture_id, topic_id) VALUES ($scriptureId, $topicId)");
         }
     }
