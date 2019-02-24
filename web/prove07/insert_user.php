@@ -26,7 +26,7 @@
     }
 
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-    $statement = $db->prepare("INSERT INTO teachers (first_name, last_name, username, password_hash) VALUES (:firstName, :lastName, :username, :passwordHash)");
+    $statement = $db->prepare("INSERT INTO teachers (first_name, last_name, username, password_hash, is_headmaster) VALUES (:firstName, :lastName, :username, :passwordHash, FALSE)");
     $statement->bindParam(':firstName', $firstName);
     $statement->bindParam(':lastName', $lastName);
     $statement->bindParam(':username', $username);
