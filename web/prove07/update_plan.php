@@ -28,5 +28,6 @@
     $statement->bindParam(':evaluation', $evaluation);
     $statement->execute();
     $_SESSION['message'] = 'Lesson Plan Saved';
-    header("location: edit_plan.php?id=$planId");
+    header("location: myplans.php");
+    die();
 ?>
