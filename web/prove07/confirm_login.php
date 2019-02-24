@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if (isset($_SESSION['isHeadmaster'])) {
+        unset($_SESSION['isHeadmaster']);
+    }
     require 'db_connect.php';
     $username = $_POST['username'];
     $password = $_POST['password'];
