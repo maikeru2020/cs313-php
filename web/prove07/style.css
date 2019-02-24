@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    background-color: lightblue;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.planTable {
+    text-align: left;
+}
+
+.field {
+    font-weight: bold;
+    width: 82px;
+}
+
+#approveBox {
+    text-align: center;
+    border: 1px solid black;
+    width: 100px; 
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+#approveLink {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: green;
+    padding: 5px;
+
+}
+
+#selectTerm {
+    float: auto;
+}
+
+#createPlan {
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    margin-bottom: 100px;
+}
+
+textarea {
+    width: 100%;
+    margin-right: 20px;
+    border-right: 1px solid black;
+}
+
+.leftAlign {
+    text-align: left;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.error {
+    color: red;
+}
+
+.message {
+    color: blue;
+}
+
+.bottom {
+    margin-bottom: 100px;
+}
+
+.blue {
+    color: blue;
+}
